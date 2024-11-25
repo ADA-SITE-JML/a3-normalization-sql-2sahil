@@ -76,9 +76,6 @@ FROM (
 ALTER TABLE Authors
 ADD PRIMARY KEY (author_id);
 
-ALTER TABLE Authors
-ADD PRIMARY KEY (author_id);
-
 CREATE TABLE Courses_Textbooks AS
 SELECT DISTINCT
     CRN,
