@@ -17,6 +17,7 @@ CREATE TABLE Unnormalized1 (
 
 \copy Unnormalized1 FROM '/Users/sahil/Desktop/Unnormalized1.csv' WITH (FORMAT csv, HEADER true, DELIMITER ';');
 
+-- FIRST NORMAL FORM --
 CREATE TABLE first_normal_form AS
 SELECT
     CRN,
@@ -30,5 +31,42 @@ SELECT
     Year,
     Course_name
 FROM Unnormalized1;
-SELECT * FROM first_normal_form;
 
+
+-- SECOND NORMAL FORM --
+
+DROP TABLE IF EXISTS Textbooks CASCADE;
+DROP TABLE IF EXISTS Courses_Textbooks CASCADE;
+DROP TABLE IF EXISTS Textbooks_Authors CASCADE;
+DROP TABLE IF EXISTS Courses CASCADE;
+
+
+CREATE TABLE Courses AS
+SELECT DISTINCT
+    CRN,
+    Course_name
+FROM first_normal_form;
+
+CREATE TABLE Textbooks AS
+SELECT DISTINCT
+    ISBN,
+    Title,
+    Edition,
+    Publisher,
+    Publisher_address,
+    Pages,
+    Year
+FROM first_normal_form;
+
+
+CREATE TABLE Courses_Textbooks AS
+SELECT DISTINCT
+    CRN,
+    ISBN
+FROM first_normal_form;
+
+CREATE TABLE Textbooks_Authors AS
+SELECT DISTINCT
+    ISBN,
+    author
+FROM first_normal_form;
