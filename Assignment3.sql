@@ -121,7 +121,6 @@ SELECT DISTINCT
     ISBN,
     Title,
     Edition,
-    Publisher,
     Pages,
     Year
 FROM first_normal_form;
