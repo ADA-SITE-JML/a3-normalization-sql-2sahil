@@ -10,15 +10,15 @@
 
 <h2>Normalizing data till 3rd normal form using SQL</h2>
 
-<p>In this task I used SQL  SHELL (psql) to normalize given unnormalized data which contains "CRN (PK1)	ISBN (PK2)	Title	Authors	Edition	Publisher	Publisher address	Pages	Year	Course name" columns. Before starting, the "DROP TABLE" command exists for every created table to run code from the same file.
+<p>In this task, I used SQL  SHELL (psql) to normalize given unnormalized data, which contains "CRN (PK1), 	ISBN (PK2), Title	A, uthors,	Edition	, Publisher,	Publisher address	, Pages	, Year	Course name" columns. Before starting, the "DROP TABLE" command exists for every created table to run code from the same file.
 </p>
 <br>
-<h2>Tools and data used for this assignment:</h2>
+<h2>Tools and data used for this task:</h2>
 
-<p> In this assignment, I used the given csv. file which can be found in "https://github.com/ADA-SITE-JML/a3-normalization-sql-2sahil/blob/main/Unnormalized1.csv", SQL Shell for running code in .sql file, and pgAdmin4 to see outputs since it is better than SQL Shell for this purpose. However, the code should be run in SQL Shell since it uses <b>\copy </b> function to import data. I used <b>\ i </b> command to run code. To run, the path of the .csv file should be changed for specific users, and the path after  <b>\i</b> command should be modified.</p>
+<p> In this task, I used the given csv. file which can be found in "https://github.com/ADA-SITE-JML/a3-normalization-sql-2sahil/blob/main/Unnormalized1.csv", SQL Shell for running code in .sql file, and pgAdmin4 to see outputs, since it is better than SQL Shell for this purpose. However, the code should be run in SQL Shell since it uses <b>\copy </b> function to import data. I used <b>\ i </b> command to run code. To run, the path of the .csv file should be changed for specific users, and the path after  <b>\i</b> command should be modified.</p>
 <br>
 <h2>Steps of normalizing data: Step 1 is importing data into SQL from csv. file.</h2>
-<p> This step is straightforward, creating a table using the "CREATE" command and then using <b>\copy </b> command to identify the format of the file which we are importing from and delimiter.  </p>
+<p> This step is straightforward, creating a table using the "CREATE" command and then using <b>\copy </b> command to identify the format of the file which we are importing from and the delimiter.  </p>
 
 <br>
 
