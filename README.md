@@ -1,4 +1,4 @@
-<h1  align=center  >Database Normalization Assignment </h1>
+<h1  align=center  >Database Normalization </h1>
 
 <br>
 
@@ -10,7 +10,7 @@
 
 <h2>Normalizing data till 3rd normal form using SQL</h2>
 
-<p>In this assignment I used SQL  SHELL (psql) to normalize given unnormalized data which contains "CRN (PK1)	ISBN (PK2)	Title	Authors	Edition	Publisher	Publisher address	Pages	Year	Course name" columns. Before starting, the "DROP TABLE" command exists for every created table to run code from the same file.
+<p>In this task I used SQL  SHELL (psql) to normalize given unnormalized data which contains "CRN (PK1)	ISBN (PK2)	Title	Authors	Edition	Publisher	Publisher address	Pages	Year	Course name" columns. Before starting, the "DROP TABLE" command exists for every created table to run code from the same file.
 </p>
 <br>
 <h2>Tools and data used for this assignment:</h2>
